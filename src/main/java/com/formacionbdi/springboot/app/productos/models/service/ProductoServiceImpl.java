@@ -18,7 +18,7 @@ public class ProductoServiceImpl implements IProductoService{
 	public List<Producto> findAll() {
 		return (List<Producto>)productoDao.findAll();
 	}
-
+	
 	@Override
 	@Transactional(readOnly = true)
 	public Producto findById(Long id) {
